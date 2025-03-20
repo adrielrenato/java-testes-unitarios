@@ -36,7 +36,7 @@ class ValidacaoPetComAdocaoEmAndamentoTest {
     }
 
     @Test
-    void naoDeveriaPermitirSolicitacaoPetComAdocaoEmAndamento() {
+    void naoDeveriaPermitirSolicitacaoPetPetComAdocaoEmAndamento() {
         // ARRANGE
         BDDMockito.given(adocaoRepository.existsByPetIdAndStatus(
                 dto.idPet(), StatusAdocao.AGUARDANDO_AVALIACAO
