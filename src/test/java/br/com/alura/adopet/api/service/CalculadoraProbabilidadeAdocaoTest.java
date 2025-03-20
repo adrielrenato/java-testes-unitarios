@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculadoraProbabilidadeAdocaoTest {
     @Test
     @DisplayName("Idade 4 anos e 4kg - ALTA")
-    void cenario01() {
+    void deveriaRetornarProbilidadeAltaParaPetComIdadeEPesoBaixo() {
         var abrigo = new Abrigo(new CadastroAbrigoDto(
                 "Abrigo Feliz",
                 "11999999999",
@@ -37,7 +37,7 @@ class CalculadoraProbabilidadeAdocaoTest {
 
     @Test
     @DisplayName("Idade 15 anos e 4kg - MÉDIA")
-    void cenario02() {
+    void deveriaRetornarProbilidadeMediaParaPetComIdadeAltaEPesoBaixo() {
         var abrigo = new Abrigo(new CadastroAbrigoDto(
                 "Abrigo Feliz",
                 "11999999999",
